@@ -1,0 +1,8 @@
+query CardsQuery ($name: String) {
+  cards (name: $name) {
+    id
+    name
+    imageUrl
+    colors
+  }
+}
