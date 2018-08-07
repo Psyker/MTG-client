@@ -1,0 +1,19 @@
+.list-enter-active, .list-leave-active {
+  transition: all .3s;
+}
+.list-enter, .list-leave-to /* .list-leave-active below version 2.1.8 */ {
+  opacity: 0;
+  transform: translateY(30px);
+}
+
+.list-move {
+  transition: transform .3s;
+}
+
+.fade-up-enter-active, .fade-up-leave-active {
+  transition: all .3s;
+}
+.fade-up-enter, .fade-up-leave-to /* .list-leave-active below version 2.1.8 */ {
+  opacity: 0;
+  transform: translateY(2px);
+}

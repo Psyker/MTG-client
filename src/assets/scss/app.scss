@@ -1,0 +1,44 @@
+@import "./bootstrap";
+@import url('https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700|PT+Sans:400,700');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: radial-gradient(#3a6c77, #10272b) fixed;
+  font-family: 'PT Sans Narrow', 'PT Sans', sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'PT Sans', sans-serif;
+  color: whitesmoke;
+}
+
+p {
+  font-family: 'PT Sans Narrow', sans-serif;
+}
+
+.row {
+  display: flex;
+  &.centered {
+    align-items: center;
+    justify-content: center;
+  }
+  &.spaced {
+    margin: 40px auto;
+  }
+}
+
+.form-field {
+  box-shadow: 0 6px 10px 0 rgba(0, 0, 0, .1);
+  border: 0;
+  outline: 0;
+  padding: 10px 18px;
+  border-radius: 2px;
+}

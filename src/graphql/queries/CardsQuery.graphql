@@ -1,8 +1,11 @@
-query CardsQuery ($name: String) {
-  cards (name: $name) {
-    id
-    name
-    imageUrl
-    colors
+query CardsQuery ($name: String, $page: Int = 1) {
+  cards (name: $name, page: $page) {
+    items {
+      id
+      name
+      imageUrl
+      colors
+    },
+    hasMore
   }
 }

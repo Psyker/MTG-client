@@ -9,7 +9,7 @@
   },
   "dependencies": {
     "vue": "^2.5.16",
-    "vue-apollo": "^3.0.0-beta.10",
+    "vue-apollo": "https://github.com/Liinkiing/vue-apollo",
     "vue-router": "^3.0.1",
     "vuex": "^3.0.1"
   },
