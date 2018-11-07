@@ -1,0 +1,9 @@
+query CardDetailQuery ($set: String!, $number: String!, $name: String!) {
+  card (set: $set, number: $number, name: $name) {
+    id
+    name
+    set
+    number
+    imageUrl
+  }
+}

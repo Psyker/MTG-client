@@ -1,13 +1,19 @@
 <template>
-    <div class="card">
-      <img :src="card.imageUrl" :alt="card.name">
-    </div>
+  <div class="card" @click="$emit('click', $event)">
+    <transition>
+      <Loader v-if="loading"></Loader>
+    </transition>
+    <img :src="card.imageUrl" :alt="card.name">
+  </div>
 </template>
 
 <script>
+    import Loader from "./ui/Loader";
     export default {
         name: "Card",
-        props: {
+      components: {Loader},
+      props: {
+          loading: {type: Boolean, default: false},
           card: {
             type: Object,
             required: true

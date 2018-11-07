@@ -5,6 +5,9 @@ query CardsQuery ($name: String, $page: Int = 1) {
       name
       imageUrl
       colors
+      set
+      slug
+      number
     },
     hasMore
   }
